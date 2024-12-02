@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Contact Gabriela Angeloni. Gabriela Angeloni is a front-end engineer based in Germany. "
+      content="Contact Gabriela Angeloni. Gabriela Angeloni is a front-end engineer based in Germany."
     />
     <title>Contact Gabriela Angeloni - Gabriela Angeloni</title>
 
@@ -50,17 +49,11 @@
           />
         </a>
         <ul>
-          <li>
-            <a href="/" title="Homepage"> Home</a>
-          </li>
-          <li>
-            <a href='/about' title='About Gabriela'> About</a>
-          </li>
-          <li>
-            <a href='/work' title='Gabriela\'s work'> Work</a>
-          </li>
+          <li><a href="/" title="Homepage">Home</a></li>
+          <li><a href="/about" title="About Gabriela">About</a></li>
+          <li><a href="/work" title="Gabriela's work">Work</a></li>
           <li class="active">
-            <a href='/contact' title='Contact Gabriela'> Contact</a>
+            <a href="/contact" title="Contact Gabriela">Contact</a>
           </li>
         </ul>
       </nav>
@@ -70,51 +63,40 @@
         <h1 class="mb-5">Let's get in touch!</h1>
         <div class="row">
           <div class="col-md-8">
-            <form
-              action="https://docs.google.com/spreadsheets/d/1u0KKPNbxpbEvXEoxyXNPkOarQmxYg0y24zGqVZFVw40/edit?gid=0#gid=0"
-              method="POST"
-              class="border p-3 rounded mb-3"
-            >
+            <form id="contactForm" class="border p-3 rounded mb-3">
               <div class="mb-3">
-                <label class="form-label"> Your email: </label>
+                <label class="form-label">Your email:</label>
                 <input
                   type="email"
-                  name="_replyto"
+                  id="email"
                   class="form-control"
                   required
                   autofocus
                 />
               </div>
               <div class="mb-3">
-                <label class="form-label"> Your message: </label>
-                <textarea
-                  name="message"
-                  class="form-control"
-                  required
-                ></textarea>
+                <label class="form-label">Your message:</label>
+                <textarea id="message" class="form-control" required></textarea>
               </div>
-
-              <!-- your other form fields go here -->
-
               <button type="submit" class="btn btn-branding">Send</button>
             </form>
           </div>
           <div class="col-md-4">
             <h3>Email</h3>
             <p>
-              <a href="mailto:gabriela.angeloni@gmail.com"> gabriela.angeloni@gmail.com </a>
+              <a href="mailto:gabriela.angeloni@gmail.com"
+                >gabriela.angeloni@gmail.com</a
+              >
             </p>
             <h3>Twitter</h3>
             <p>
-              <a href="https://twitter.com/" target="_blank">
-                @gabiangeloni
-              </a>
+              <a href="https://twitter.com/" target="_blank">@gabiangeloni</a>
             </p>
             <h3>Instagram</h3>
             <p>
-              <a href="https://www.instagram.com/gabiangeloni" target="_blank">
-                @gabiangeloni
-              </a>
+              <a href="https://www.instagram.com/gabiangeloni" target="_blank"
+                >@gabiangeloni</a
+              >
             </p>
           </div>
         </div>
@@ -127,55 +109,73 @@
           <p class="text-muted">Let's work together</p>
         </div>
         <div>
-          <a class='btn btn-branding mt-3' href='/contact' title='Contact Vinnie'>
+          <a
+            class="btn btn-branding mt-3"
+            href="/contact"
+            title="Contact Gabriela"
+          >
             Contact me
           </a>
         </div>
       </div>
       <div class="d-flex justify-content-center mb-5">
-          <a
-            href="mailto:gabriela.angeloni@gmail.com"
-            class="email-link"
-            title="Email Gabi"
-          >
-            gabriela.angeloni@gmail.com
-          </a>
-        </div>
-        <div class="social-links d-flex justify-content-center">
-          <a
-            href="https://github.com/babiangeloni"
-            target="_blank"
-            title="GitHub Profile"
-          >
-            <i class="fab fa-github"></i>
-          </a>
-          <a
-            href="https://www.instagram.com/babiangeloni"
-            target="_blank"
-            title="instragram Profile"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a
-            href="https://twitter.com/"
-            target="_blank"
-            title="Twitter Profile"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-        </div>
-        <p class="text-center mt-5">
-          ✌️ This website was coded by Gabriela Angeloni, and is
-          <a
-            href="https://github.com/babiangeloni/porfolio"
-            target="_blank"
-          >
-            open-sourced
-          </a>
-        </p>
-      </footer>
-    </div>
+        <a
+          href="mailto:gabriela.angeloni@gmail.com"
+          class="email-link"
+          title="Email Gabi"
+        >
+          gabriela.angeloni@gmail.com
+        </a>
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a
+          href="https://github.com/babiangeloni"
+          target="_blank"
+          title="GitHub Profile"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/babiangeloni"
+          target="_blank"
+          title="Instagram Profile"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/" target="_blank" title="Twitter Profile">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+      <p class="text-center mt-5">
+        ✌️ This website was coded by Gabriela Angeloni, and is
+        <a href="https://github.com/babiangeloni/porfolio" target="_blank"
+          >open-sourced</a
+        >
+      </p>
+    </footer>
+    <script>
+      const form = document.getElementById("contactForm");
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+
+        const response = await fetch(
+          "https://script.google.com/macros/s/AKfycbyLKrSSeSmLPIADxZJ-jUETCo2eXwAKxm8Uef5LzT5o3ncBLjBiVXTCiZ2gn6wEoQvaAA/exec",
+          {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ email, message }),
+          }
+        );
+
+        if (response.ok) {
+          alert("Message sent successfully!");
+          form.reset();
+        } else {
+          alert("There was an error. Please try again.");
+        }
+      });
+    </script>
   </body>
 </html>
-
-
