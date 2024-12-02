@@ -1,0 +1,50 @@
+:root {
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --heading-font-family: "Playfair Display", serif;
+  --default-font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--default-font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+nav .navbar-nav {
+  padding: 0;
+  margin: 0;
+}
+
+nav .nav-item {
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav .nav-link {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav .nav-link:hover,
+nav .nav-item.active .nav-link {
+  color: var(--branding-color);
+}
+
+.navbar-toggler-icon {
+  background-color: var(--branding-color); /* Custom hamburger icon color */
+}
