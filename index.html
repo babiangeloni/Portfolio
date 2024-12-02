@@ -5,14 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Front-end developer - Gabriela Angeloni</title>
     
-    <!-- Add Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" />
+      <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/portfolio.css" />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ddc3ee268a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
+
   <body>
+    <body>
     <div class="container">
-      <!-- Navbar Component -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="/" title="Homepage">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
           <img
             src="images/logo.png"
             class="logo d-none d-md-block"
@@ -24,37 +47,170 @@
             alt="Gabriela Logo"
           />
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="/" title="Homepage">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about.html" title="About Gabriela">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/work.html" title="Gabriela's work">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/contact.html" title="Contact Gabriela">Contact</a>
-            </li>
-          </ul>
-        </div>
+       <ul>
+          <li class="active">
+            <a href="/" title="Homepage"> Home</a>
+          </li>
+          <li>
+            <a href='/about.html' title='About Gabriela'> About</a>
+          </li>
+          <li>
+            <a href='/work.html' title='Gabriela\'s work'> Work</a>
+          </li>
+          <li>
+            <a href='/contact.html' title='Contact Gabriela'> Contact</a>
+          </li>
+        </ul>
       </nav>
     </div>
 
-    <!-- Add Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <div class="hero">
+      <p>👋 Hello, I'm</p>
+      <h1>Gabriela Angeloni</h1>
+      <h2 class="mb-5">Front-end developer based in Germany</h2>
+      <div>
+        <a class='btn btn-branding' href='/contact' title='Contact me'>Contact me</a
+        >
+      </div>
+    </div>
+
+    <p class="text-center m-5">Check out some of my featured projects below</p>
+
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col d-none d-lg-block">
+          <img
+          src="images/dive.jpg"  
+          class="img-fluid"
+            alt="Dive project preview"
+          />
+        </div>
+        <div class="col">
+          <div class="project-desciption">
+            <h2 class="mb-5">Dive Landing Page</h2>
+            <p class="mb-5 text-muted">
+              I entered the world of front-end development by gaining some
+              knowledge in HTML, CSS, and JavaScript. I used my knowledge of
+              these languages, along with my new skills in VS Code, to build a
+              landing page about one of my passions: diving. The page utilizes JavaScript functions
+              to create user interaction.
+            </p>
+            <a class='btn btn-branding-outline' href='/work'>
+              Learn more
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mb-5">
+        <div class="col">
+          <div class="project-desciption">
+            <h2 class="mb-5">Weather App</h2>
+            <p class="mb-5 text-muted">
+              I built a Vanilla JavaScript weather app in SheCodes Plus, an
+              advanced 8-week JavaScript coding workshop. Building upon my
+              previously-gained knowledge, I also became skilled in Bootstrap,
+              API’s, real-life development workflow, hosting, and advanced
+              JavaScript. I combined all of these skills to create a
+              fully-functioning weather app.
+            </p>
+            <a class='btn btn-branding-outline' href='/work'>
+              Learn more
+            </a>
+          </div>
+        </div>
+        <div class="col d-none d-lg-block">
+          <img
+            src="images/weather.jpg"
+            class="img-fluid"
+            alt="Weather project preview"
+          />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col d-none d-lg-block">
+          <img
+            src="images/joke.jpg"
+            class="img-fluid"
+            alt="JOke app preview"
+          />
+
+  
+        </div>
+
+        <div class="col">
+          <div class="project-desciption">
+            <h2 class="mb-5">Jokes App</h2>
+            <p class="mb-5 text-muted">
+              I immersed myself in React development in SheCodes React. I used
+              my knowledge of this highly-demanded framework to build a working
+              joke app incorporating coding best practices, along with the
+              most popular tools and technologies.
+            </p>
+            <a class='btn btn-branding-outline' href='/work'>
+              Learn more
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+          <div>
+            <h3>Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a class='btn btn-branding mt-3' href='/contact' title='Contact Gabriela'>
+              Contact me
+            </a>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:gabriela.angeloni@gmail.com"
+            class="email-link"
+            title="Email Gabi"
+          >
+            gabriela.angeloni@gmail.com
+          </a>
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://github.com/babiangeloni"
+            target="_blank"
+            title="GitHub Profile"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/babiangeloni"
+            target="_blank"
+            title="instragram Profile"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            title="Twitter Profile"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+        <p class="text-center mt-5">
+          ✌️ This website was coded by Gabriela Angeloni, and is
+          <a
+            href="https://github.com/babiangeloni/porfolio"
+            target="_blank"
+          >
+            open-sourced
+          </a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
